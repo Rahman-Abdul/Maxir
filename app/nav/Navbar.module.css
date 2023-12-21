@@ -1,4 +1,9 @@
 .navbar{
-background-color:#C2EFD4
-;
+background-color:#C2EFD4;
+display: flex;
+justify-content: space-between;
+}
+.navlink{
+    display: flex;
+    justify-content: space-between;
 }

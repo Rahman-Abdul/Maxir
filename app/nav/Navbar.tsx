@@ -7,10 +7,10 @@ type Props = {}
 export default function Navbar({}: Props) {
   return (
     <nav className={styles.navbar}>
-      <ul>
+      <ul className={styles.navb}>
         <li>
           <Link href="/">
-            0Home
+            Home
           </Link>
         </li>
         <li>
@@ -23,6 +23,9 @@ export default function Navbar({}: Props) {
             Contact
           </Link>
         </li>
+      </ul>
+      <ul>
+
       </ul>
     </nav>
   )

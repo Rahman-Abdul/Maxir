@@ -4,29 +4,36 @@ import styles from './Navbar.module.css'
 
 type Props = {}
 
-export default function Navbar({}: Props) {
-  return (
+const Navbar = () => {
+
+ return (
     <nav className={styles.navbar}>
-      <ul className={styles.navb}>
-        <li>
-          <Link href="/">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link href="/about">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact">
-            Contact
-          </Link>
+      <ul className={styles.navItems}>
+        <li className={styles.navItem}>
+          <Link href="/">Home</Link>
         </li>
       </ul>
-      <ul>
-
+      <ul className={styles.navItems}>
+        <li className={styles.navItem}>
+          <Link href="/">Home</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/about">About</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/contact">Contact</Link>
+        </li>
+      </ul>
+      <ul className={styles.navItems}>
+        <li className={styles.navItem}>
+          <Link href="/about">About</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/contact">Contact</Link>
+        </li>
       </ul>
     </nav>
-  )
-}
+ );
+};
+
+export default Navbar;

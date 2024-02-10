@@ -1,9 +1,27 @@
-.navbar{
-background-color:#C2EFD4;
-display: flex;
-justify-content: space-between;
-}
-.navlink{
+/* styles/Navbar.module.css */
+.navbar {
+    background-color:#C2EFD4;
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
-}
+    justify-content:space-around;
+   }
+
+   .navItems {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+   }
+
+   .navItem {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    display: block;
+   }
+
+   .navItem:hover {
+    background-color: #ddd;
+    color: black;
+   }

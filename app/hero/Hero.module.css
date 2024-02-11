@@ -1,0 +1,37 @@
+.mainhero {
+    background-color: #C2EFD4;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.heroh1{
+   color: #224F34;
+   font-size: 86px;
+   font-weight: 700;
+   line-height: 106.21px;
+   width: 649px;
+}
+.herop{
+    color:#267D49;
+    font-size: 24px;
+    line-height: 52.8px;
+    font-weight: 500;
+    width: 500px;
+
+}
+
+.herobutton{
+    background-color:#224F34;
+    color: #FFFFFF;
+    width: 259px;
+    height: 74px;
+    border-radius: 3px;
+
+}
+
+.heroImage{
+   width: 570px;
+   height: 717px;
+   margin-top: 50px;
+}

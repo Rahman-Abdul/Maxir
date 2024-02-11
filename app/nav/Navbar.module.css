@@ -17,7 +17,8 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    color: #fff;
+
+
     display: block;
    }
 
@@ -25,3 +26,10 @@
     background-color: #ddd;
     color: black;
    }
+.linkt{
+    color:#224F34 !important;
+    text-decoration:none;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+}

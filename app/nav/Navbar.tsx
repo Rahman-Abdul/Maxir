@@ -30,10 +30,10 @@ const Navbar = () => {
       </ul>
       <ul className={styles.navItems}>
         <li className={styles.navItem}>
-          <Link href="/about">About</Link>
+        <Image src="./bag.svg" alt='rivo' width={30} height={30}/>
         </li>
         <li className={styles.navItem}>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact"><button className={styles.buttonl}>LOGIN</button></Link>
         </li>
       </ul>
     </nav>

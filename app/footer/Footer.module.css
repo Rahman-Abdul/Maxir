@@ -1,0 +1,6 @@
+.mainfooter{
+    background-color:#224F34;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}

@@ -4,3 +4,5 @@ import {
     PayloadAction,
   } from "@reduxjs/toolkit";
   import { RootState } from "../store";
+  // Define a type for the slice
+

@@ -7,7 +7,7 @@ interface Props {
 export default function Shop({}: Props): ReactElement {
     return (
         <div>
-            <h1>The m</h1>
+            <h1>The philosophy of life and logic</h1>
         </div>
     )
 }

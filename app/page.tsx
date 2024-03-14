@@ -5,11 +5,11 @@ import Footer from './footer/Footer';
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       <Navbar/>
         <Hero/>
-      <h1>Hello there</h1>
       <Footer/>
     </div>
   )
 }
+

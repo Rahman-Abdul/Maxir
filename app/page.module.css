@@ -1,0 +1,8 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product_h1{
+    text-align: center;
+}

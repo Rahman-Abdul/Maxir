@@ -2,6 +2,7 @@
     background-color: #C2EFD4;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -31,7 +32,11 @@
 }
 
 .heroImage{
-   width: 570px;
+   width: 400px;
    height: 717px;
    margin-top: 50px;
+}
+.main_hero{
+    display: flex;
+    flex-wrap: wrap;
 }

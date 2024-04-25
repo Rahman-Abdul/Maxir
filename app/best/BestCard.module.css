@@ -1,0 +1,14 @@
+
+.product_card{
+    display:flex;
+    justify-content: center;
+}
+.image_card{
+    background-color: aquamarine;
+    margin: 10px;
+
+}
+.product_text{
+    display: flex;
+    justify-content: center;
+}

@@ -2,11 +2,16 @@
     background-color:#224F34;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .centeredContent > p{
     color: #C2EFD4;
 }
 .centeredContent > h3 {
     color: #FFFFFF;
+}
+.footer_text{
+    display: flex;
+    flex-wrap: wrap;
 }

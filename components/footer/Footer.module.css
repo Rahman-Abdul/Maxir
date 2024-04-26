@@ -1,9 +1,9 @@
-.mainfooter{
+.main_footer{
     background-color:#224F34;
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 .centeredContent > p{
     color: #C2EFD4;

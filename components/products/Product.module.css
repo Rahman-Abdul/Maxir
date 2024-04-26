@@ -1,0 +1,23 @@
+
+.product{
+    margin-top: 30px;
+}
+.image_card{
+    background-color: #A9D4BA;
+    margin: 10px;
+
+}
+.product_text{
+    display: flex;
+    justify-content: center;
+}
+.best_name{
+    text-align: center;
+    margin: 0px;
+}
+.text1{
+    margin-right: 20px;
+}
+.text2{
+    margin-left: 20px;
+}

@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import BestCard from './best/BestCard'
+import BestCard from '../components/best/BestCard'
 import { bestProducts } from '@/data';
 
 interface Props {

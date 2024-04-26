@@ -5,4 +5,34 @@
 }
 .product_h1{
     text-align: center;
+    color: #224F34;
+    font-size: 64px;
 }
+.product_p{
+    text-align: center;
+    color: #224F34;
+    font-size: 22px;
+}
+.product_button{
+    justify-self: center;
+}
+.container{
+    display: grid;
+}
+.product_b{
+    margin: 40px;
+  justify-content: space-around;
+    display: flex;
+    color: #224F34;
+    font-size: 22px;
+    border-width: 2px;
+    border-color: #224F34;
+    width: 150px;
+    justify-self: center;
+
+}
+.our_products{
+    display: flex;
+    justify-self: center;
+}
+

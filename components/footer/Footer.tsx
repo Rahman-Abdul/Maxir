@@ -9,12 +9,10 @@ interface Props {
 
 export default function Footer({}: Props): ReactElement {
     return (
-        <div className={styles.mainfooter}>
+        <div className={styles.main_footer}>
              <div className={styles.centeredContent}>
                 <h1 className={styles.title}>RIVO</h1>
             <p>Social Media</p>
-            <div>
-            </div>
             </div>
             <div className={styles.centeredContent}>
                 <h3>SHOP</h3>

@@ -20,15 +20,19 @@ export default function BestCard(props: Props) {
           alt={props.product.name}
         />
         </div>
-        <div className={styles.product_text}>
-          <p className="text-center text-slate-600">
+        <p className={styles.best_name}>
             {props.product.name}
           </p>
-          <p>|</p>
-          <p className="text-center text-slate-600">
+        <div className={styles.product_text}>
+            <p className={styles.text1}>
             {props.product.price} $
           </p>
+          <p>|</p>
+          <p className={styles.text2}>
+            {props.product.rate}
+          </p>
         </div>
+
       </div>
       </div>
     );

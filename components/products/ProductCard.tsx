@@ -15,8 +15,8 @@ export default function ProductCard(props: Props) {
         <div className={styles.image_card}>
         <Image
           src={props.product.imagePath}
-          width={450}
-          height={500}
+          width={400}
+          height={450}
           alt={props.product.name}
         />
         </div>

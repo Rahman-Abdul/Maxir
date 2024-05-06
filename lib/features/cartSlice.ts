@@ -1,55 +1,79 @@
 import {
-    createSelector,
-    createSlice,
-    PayloadAction,
-  } from "@reduxjs/toolkit";
-  import { RootState } from "../store";
-  // Define a type for the slice
+  createSelector,
+  createSlice,
+  PayloadAction,
+} from "@reduxjs/toolkit";
+import { CartItem, Product } from "../../interfaces";
+import { RootState } from '../store'
 
-
-interface CartState {
-  items: Array<{ id: number; quantity: number }>;
-  totalQuantity: number;
-  totalPrice: number;
+export interface CartState {
+  cartItems: CartItem[];
 }
-
 const initialState: CartState = {
-  items: [],
-  totalQuantity: 0,
-  totalPrice: 0,
+  cartItems: [],
 };
 
-const cartSlice = createSlice({
+export const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    addItemToCart(state, action) {
-      const itemIndex = state.items.findIndex((item) => item.id === action.payload.id);
-      if (itemIndex >= 0) {
-        state.items[itemIndex].quantity++;
-      } else {
-        state.items.push({
-          id: action.payload.id,
-          quantity: 1,
+    increment: (state, action: PayloadAction<Product>) => {
+      const cartItem = state.cartItems.find(
+        (el) => el.product.id === action.payload.id
+      );
+      if (cartItem) cartItem.qty++;
+      else {
+        state.cartItems.push({
+          product: action.payload,
+          qty: 1,
         });
       }
-      state.totalQuantity++;
-      state.totalPrice += action.payload.price;
     },
-    removeItemFromCart(state, action) {
-      const itemIndex = state.items.findIndex((item) => item.id === action.payload.id);
-      if (itemIndex >= 0) {
-        state.items[itemIndex].quantity--;
-        if (state.items[itemIndex].quantity === 0) {
-          state.items.splice(itemIndex, 1);
+
+    decrement: (state, action: PayloadAction<Product>) => {
+      const cartItem = state.cartItems.find(
+        (el) => el.product.id === action.payload.id
+      );
+      if (cartItem) {
+        cartItem.qty--;
+        if (cartItem.qty === 0) {
+          state.cartItems = state.cartItems.filter(
+            (el) => el.product.id !== action.payload.id
+          );
         }
       }
-      state.totalQuantity--;
-      state.totalPrice -= action.payload.price;
     },
   },
 });
 
-export const cartActions = cartSlice.actions;
+const cartItems = (state: RootState) =>
+  state.cart.cartItems;
+
+export const productQtyInCartSelector = createSelector(
+  [cartItems, (cartItems, productId: number) => productId],
+  (cartItems, productId) =>
+    cartItems.find((el) => el.product.id === productId)?.qty
+);
+
+export const totalCartItemsSelector = createSelector(
+  [cartItems],
+  (cartItems) =>
+    cartItems.reduce(
+      (total: number, curr: CartItem) =>
+        (total += curr.qty),
+      0
+    )
+);
+export const TotalPriceSelector = createSelector(
+  [cartItems],
+  (cartItems) =>
+    cartItems.reduce(
+      (total: number, curr: CartItem) =>
+        (total += curr.qty * curr.product.price),
+      0
+    )
+);
+
+export const { increment, decrement } = cartSlice.actions;
 
 export default cartSlice.reducer;

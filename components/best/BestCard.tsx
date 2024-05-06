@@ -1,14 +1,15 @@
+"use client";
 import React from 'react'
 import { Product } from '@/interfaces';
 import Image from "next/image";
 import styles from '../best/BestCard.module.css'
 
-
-
 interface Props {
     product: Product;
   }
 export default function BestCard(props: Props) {
+
+
   return (
         <div className=" border rounded-md shadow hover:shadow-lg transition overflow-hidden ">
         <div>
@@ -32,8 +33,7 @@ export default function BestCard(props: Props) {
             {props.product.rate}
           </p>
         </div>
-
-      </div>
+     </div>
       </div>
     );
   };

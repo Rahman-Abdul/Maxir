@@ -1,7 +1,5 @@
 import styles from './page.module.css';
-import Navbar from '../components/nav/Navbar';
 import Hero from '../components/hero/Hero';
-import Footer from '../components/footer/Footer';
 import { bestProducts } from '@/data';
 import BestCard from '../components/best/BestCard';
 import Products from '../components/products/Products';

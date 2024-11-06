@@ -11,7 +11,7 @@ export default function BestCard(props: Props) {
 
 
   return (
-        <div className=" border rounded-md shadow hover:shadow-lg transition overflow-hidden ">
+        <div className="border rounded-md shadow hover:shadow-lg transition overflow-hidden">
         <div>
     <div className={styles.image_card}>
         <Image

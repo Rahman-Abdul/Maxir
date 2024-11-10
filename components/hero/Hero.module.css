@@ -2,23 +2,24 @@
     background-color: #C2EFD4;
     height: auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .heroh1{
    color: #224F34;
-   font-size: 86px;
+   font-size: 66px;
    font-weight: 700;
    line-height: 106.21px;
-   width: 649px;
+   width: 300px;
+
 }
 .herop{
     color:#267D49;
     font-size: 24px;
     line-height: 52.8px;
     font-weight: 500;
-    width: 500px;
+    width: 300px;
 
 }
 
@@ -32,11 +33,9 @@
 }
 
 .heroImage{
-   width: 400px;
-   height: 717px;
+   width: auto;
+   height: auto;
    margin-top: 50px;
+  margin-bottom: 50px;
 }
-.main_hero{
-    display: flex;
-    flex-wrap: wrap;
-}
+

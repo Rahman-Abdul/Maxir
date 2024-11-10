@@ -9,7 +9,8 @@ export default function Hero({}: Props) {
     <div className={styles.mainhero}>
     <div>
         <h1 className={styles.heroh1}>Discover and Find Your Own Fashion!</h1>
-        <p className={styles.herop}> Explore our curated collection of stylish clothing and accessories tailored to your unique taste.</p>
+        <p className={styles.herop}> Explore our curated collection of stylish
+        clothing and accessories tailored to your unique taste.</p>
         <button className={styles.herobutton}>EXPLORE NOW</button>
     </div>
     <div className={styles.heroImage}>

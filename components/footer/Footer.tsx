@@ -30,7 +30,6 @@ export default function Footer({}: Props): ReactElement {
             </div>
             <div className={styles.centeredContent}>
             <h3>STAY UP TO DATE</h3>
-            <Contact/>
             </div>
         </div>
     )
